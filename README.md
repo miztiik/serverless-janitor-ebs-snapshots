@@ -9,7 +9,7 @@ You can also follow this article in **[Youtube](https://youtu.be/0H8SM15YKEs)**
 
 ## Pre-Requisities
 We will need the following pre-requisites to successfully complete this activity,
-- Few `EBS Snashots` with a Tag Key:`DeleteOn` and Value as `Date` in this format `YYYY-MM-DD`
+- Few `EBS Snapshots` with a Tag Key:`DeleteOn` and Value as `Date` in this format `YYYY-MM-DD`
 - IAM Role - _i.e_ `Lambda Service Role` - _with_
   - `EC2FullAccess` _permissions_
   - _You may use an `Inline` policy with more restrictive permissions_
@@ -35,7 +35,7 @@ globalVars  = {}
 globalVars['Owner']                 = "Miztiik"
 globalVars['Environment']           = "Test"
 globalVars['REGION_NAME']           = "ap-south-1"
-globalVars['tagName']               = "Valaxy-Serverless-EBS-Penny-Pincher"
+globalVars['tagName']               = "Valaxy-Serverless-Janitor-For-EBS-Snapshots"
 globalVars['findNeedle']            = "DeleteOn"
 globalVars['RetentionDays']         = "7"
 globalVars['tagsToExclude']         = "Do-Not-Delete"
