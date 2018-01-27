@@ -16,7 +16,7 @@ We will need the following pre-requisites to successfully complete this activity
 _The image above shows the execution order, that should not be confused with the numbering of steps given here_
 
 
-## Step 1 - Configure Lambda Function- `Serverless-IAM-Sentry`
+## Step 1 - Configure Lambda Function- `Serverless Janitor`
 The below script is written in `Python 2.7`. Remember to choose the same in AWS Lambda Functions.
 ### Customisations
 _Change the global variables at the top of the script to suit your needs._
