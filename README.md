@@ -1,7 +1,7 @@
 # Serverless Janitor for EBS Snapshots
-Changing access keys (which consist of an access key ID and a secret access key) on a regular schedule is a well-known security best practice because it shortens the period an access key is active and therefore reduces the business impact if they are compromised. Having an established process that is run regularly also ensures the operational steps around key rotation are verified, so changing a key is never a scary step.
+Many organizations use EBS snapshots to create point-in-time recovery points to use in case of data loss or disaster. However, EBS snapshot costs can quickly get out of control if not closely controlled. Individual snapshots are not costly, but the cost can grow quickly when many are created.
 
-Identifying applications and services with old keys become imperative in those case. We are going to use `Lambda Functions` to periodically check our account for old keys and notify our Security Operations Team using `SNS`
+Organizations can help get EBS snapshots back under control by using lambda functions to delete older snapshots based on tags or retention dates
 
 ![Fig : Valaxy-Serverless-Security-Group-Sentry](https://raw.githubusercontent.com/miztiik/serverless-janitor-ebs-snapshots/master/images/serverless-janitor-ebs-snapshots.png)
 You can also follow this article in [Youtube](https://youtu.be/0H8SM15YKEs)
