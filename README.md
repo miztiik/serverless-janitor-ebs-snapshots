@@ -102,14 +102,5 @@ _If you want to learn more about the above Scheduled expressions,_ Ref: [CloudWa
 ## Step 3 - Testing the solution
 Create few EBS Snapshots and add the Tag `DeleteOn` with Value as <TODAYS-DATE>
 
-### Rotate access keys
-After you have identified old keys, You should follow these steps to rotate the keys
-1. Create a second access key in addition to the one in use.
-1. Update all your applications to use the new access key and validate that the applications are working.
-1. Change the state of the previous access key to inactive.
-1. Validate that your applications are still working as expected.
-1. Delete the inactive access key.
-
 ### Summary
-We have demonstrated how you can automatically identify users with old Access/Secret Keys.
-
+We have demonstrated how you can automatically identify and delete old and unused EBS Snapshots.
