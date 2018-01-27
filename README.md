@@ -1,5 +1,5 @@
 # Serverless Janitor for EBS Snapshots
-Many organizations use Automated EBS snapshots to create point-in-time recovery points to use in case of data loss or disaster. However, EBS snapshot costs can quickly get out of control if not closely controlled. Individual snapshots are not costly, but the cost can grow quickly when many are created.
+Many organizations use [Automated EBS snapshots](https://github.com/miztiik/serverless-backup) to create point-in-time recovery points to use in case of data loss or disaster. However, EBS snapshot costs can quickly get out of control if not closely controlled. Individual snapshots are not costly, but the cost can grow quickly when many are created.
 
 Organizations can help get EBS snapshots back under control by using lambda functions to delete older snapshots based on tags or retention dates
 
