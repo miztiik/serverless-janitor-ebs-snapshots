@@ -1,10 +1,11 @@
 # Serverless Janitor for EBS Snapshots
-Many organizations use EBS snapshots to create point-in-time recovery points to use in case of data loss or disaster. However, EBS snapshot costs can quickly get out of control if not closely controlled. Individual snapshots are not costly, but the cost can grow quickly when many are created.
+Many organizations use Automated EBS snapshots to create point-in-time recovery points to use in case of data loss or disaster. However, EBS snapshot costs can quickly get out of control if not closely controlled. Individual snapshots are not costly, but the cost can grow quickly when many are created.
 
 Organizations can help get EBS snapshots back under control by using lambda functions to delete older snapshots based on tags or retention dates
 
 ![Fig : Valaxy-Serverless-Security-Group-Sentry](https://raw.githubusercontent.com/miztiik/serverless-janitor-ebs-snapshots/master/images/serverless-janitor-ebs-snapshots.png)
-You can also follow this article in [Youtube](https://youtu.be/0H8SM15YKEs)
+
+You can also follow this article in **[Youtube](https://youtu.be/0H8SM15YKEs)**
 
 ## Pre-Requisities
 We will need the following pre-requisites to successfully complete this activity,
