@@ -100,7 +100,7 @@ cron(0 12 * * ? *)
 _If you want to learn more about the above Scheduled expressions,_ Ref: [CloudWatch - Schedule Expressions for Rules](http://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html#RateExpressions)
 
 ## Step 3 - Testing the solution
-Create few EBS Snapshots and add the Tag `DeleteOn` with Value as `<TODAYS-DATE-IN-YYYY-MM-DD>`
+Create few EBS Snapshots and add the Tag `DeleteOn` with Value as `<TODAYS-DATE-IN-YYYY-MM-DD-FORMAT>`
 
 ### Summary
 We have demonstrated how you can automatically identify and delete old and unused EBS Snapshots.
