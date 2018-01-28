@@ -5,7 +5,7 @@ Organizations can help get EBS snapshots back under control by using lambda func
 
 ![Fig : Valaxy-Serverless-Security-Group-Sentry](https://raw.githubusercontent.com/miztiik/serverless-janitor-ebs-snapshots/master/images/serverless-janitor-ebs-snapshots.png)
 
-You can also follow this article in **[Youtube](https://youtu.be/0H8SM15YKEs)**
+You can also follow this article in **[Youtube](https://youtu.be/eAVqOvlsztE)**
 
 ## Pre-Requisities
 We will need the following pre-requisites to successfully complete this activity,
