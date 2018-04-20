@@ -25,9 +25,10 @@ def janitor_for_snapshots():
 
     snap_older_than_RetentionDays = ( datetime.date.today() - datetime.timedelta(days= int(globalVars['RetentionDays'])) ).strftime('%Y-%m-%d')
     delete_today = datetime.date.today().strftime('%Y-%m-%d')
+
+    tag_key = 'tag:' + globalVars['findNeedle']
     filters = [
-        {'Name': 'tag-key', 'Values': [globalVars['findNeedle']]},
-        {'Name': 'tag-value', 'Values': [delete_today]},
+        {'Name': tag_key, 'Values': [delete_today]},
     ]
     # Get list of Snaps with Tag 'globalVars['findNeedle']'
     snaps_to_remove = ec2_client.describe_snapshots(OwnerIds=account_ids,Filters=filters)
