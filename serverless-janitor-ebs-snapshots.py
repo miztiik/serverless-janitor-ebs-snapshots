@@ -28,9 +28,10 @@ def janitor_for_snapshots():
     delete_today = datetime.date.today().strftime('%Y-%m-%d')
 
     tag_key = 'tag:' + globalVars['findNeedle']
-    filters = [
-        {'Name': tag_key, 'Values': [delete_today]},
-    ]
+    filters = [{'Name': tag_key, 'Values': [delete_today]},]
+    
+    # filters={ 'tag:' + config['tag_name']: config['tag_value'] }
+    
     # Get list of Snaps with Tag 'globalVars['findNeedle']'
     snaps_to_remove = ec2_client.describe_snapshots(OwnerIds=account_ids,Filters=filters)
 
